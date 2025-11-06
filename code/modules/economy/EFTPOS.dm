@@ -269,6 +269,7 @@
 				src.visible_message("\icon[src] \The [src] chimes.")
 				transaction_paid = 1
 	else
-		..()
+		//..()
+		return
 
 	//emag?
