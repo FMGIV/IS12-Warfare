@@ -213,6 +213,7 @@ SUBSYSTEM_DEF(jobs)
 				if(age < job.minimum_character_age) // Nope.
 					continue
 
+				/*
 				switch(age)
 					if(job.minimum_character_age to (job.minimum_character_age+10))
 						weightedCandidates[V] = 3 // Still a bit young.
@@ -227,7 +228,9 @@ SUBSYSTEM_DEF(jobs)
 					else
 						// If there's ABSOLUTELY NOBODY ELSE
 						if(candidates.len == 1) weightedCandidates[V] = 1
-
+				*/
+				
+				if(candidates.len == 1) weightedCandidates[V] = 1
 
 			var/mob/new_player/candidate = pickweight(weightedCandidates)
 			if(AssignRole(candidate, command_position))
