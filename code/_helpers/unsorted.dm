@@ -191,10 +191,10 @@ Turf and target are seperate in case you want to teleport some distance from a t
 		if(O.density && !istype(O, /obj/structure/window))
 			return 1
 	return 0
-
+/*
 /proc/sign(x)
 	return x!=0?x/abs(x):0
-
+*/
 /proc/getline(atom/M,atom/N)//Ultra-Fast Bresenham Line-Drawing Algorithm
 	var/px=M.x		//starting x
 	var/py=M.y
