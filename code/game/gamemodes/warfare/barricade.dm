@@ -157,6 +157,7 @@
 		damage = round(damage * 0.5)
 		if(damage)
 			//..()
+			return
 
 /obj/structure/defensive_barrier/proc/check_cover(obj/item/projectile/P, turf/from)
 	var/turf/cover = get_turf(src)
